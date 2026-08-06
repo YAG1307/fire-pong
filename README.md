@@ -1,22 +1,19 @@
 # Fire Pong 🔥
 
-A 2-player local arcade Pong clone built in Unity (C#) featuring ball speed increase, anti-lock y-axis, and fire particle effects.
+A local 2-player Pong clone made in Unity. Ball speed increases as you play and hits a fire mode at a specific speed.
 
- **[Play the File Build on Itch.io] (https://yasani.itch.io/fire-pong)** 
-
----
-
-# Controls
-
-Move Paddle Up or Move Paddle Down
- Player 1 (Left):  W & S 
- Player 2 (Right):  Up Arrow & Down Arrow
+[Play on Itch.io] (https://yasani.itch.io/fire-pong)
 
 ---
 
-## Summary of Code
+### Controls
+* **Player 1 (Left):** W / S
+* **Player 2 (Right):** Up / Down Arrows
 
-* Dynamic Speed Buildup: Every paddle bounce increases ball velocity.
+---
+
+### How it Works
+* **Speed Increase:** Ball speed increases with every paddle hit.
 * Fire Mode State: When ball reaches certain speed, the ball has special fire particles and sound effects as well as increased speed.
-* Y-Axis Anti-Lock: Event called in FixedUpdate detects horizontal bounce traps and applies trajectory change.
-* **Score Buildup:** An increasing score when ball shot in goal. 
+* Y-Axis Anti-Lock:  Prevents the ball from getting trapped in horizontal bounce loops.
+
